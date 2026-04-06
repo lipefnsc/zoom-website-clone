@@ -1,0 +1,68 @@
+@import url(global.css);
+
+/* ----- HEADER ----- */
+
+.header-content {
+    height: 80px;
+    padding: 0 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+.header-center-content {
+
+    display: flex;
+    /* justify-content: center; */
+    flex-grow: 1;
+}
+
+.header-navigation ul {
+    list-style-type: none;
+
+    display: flex;
+    gap: 20px;
+}
+
+.header-navigation a {
+    color: var(--grey);
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.header-navigation a:hover {
+    color: var(--blue);
+}
+
+.header-right-content {
+    display: flex;
+    gap: 16px;
+}
+
+.button {
+    text-decoration: none;
+    border: 2px solid var(--blue);
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.button.left {
+    color: var(--blue);
+    transition: 0.4s ease;
+}
+
+.button.left:hover {
+    background-color: #b2ccff;
+}
+
+.button.right {
+    color: var(--white);
+    background-color: var(--blue);
+    transition: 0.4s ease;
+}
+
+.button.right:hover {
+    background-color: #0648ce;
+}

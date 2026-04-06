@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue: #0B5CFF;
+    --grey: #484848;
+    --white: #FFFFFF;
+}
+
+/* ===== RESET =====*/
+
+* { 
+    box-sizing: border-box; 
+}
+
+html, body { 
+    margin: 0;
+    padding: 0; 
+    background-color: #f9f9f9;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+img, video { 
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+ul, ol { 
+    margin: 0;
+    padding: 0; 
+}
+
+button, input, textarea, select { 
+    font: inherit; 
+}
