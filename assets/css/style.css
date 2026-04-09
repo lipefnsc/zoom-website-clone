@@ -49,6 +49,7 @@
     border: 2px solid var(--blue);
     border-radius: 25px;
     padding: 5px 20px;
+    align-self: flex-start;
 }
 
 .button.left {
@@ -72,3 +73,65 @@
 
 /* ----- MAIN ----- */
 
+.main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 18px;
+
+    display: grid;
+    grid-template-areas: 
+        'transform transform-img'
+        'organization-img organization-text'
+    ;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+#transform-section {
+    grid-area: transform;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#transform-section span {
+    color: var(--blue);
+}
+
+#transform-section-img {
+    grid-area: transform-img;
+}
+
+#organizations-section-img {
+    grid-area: organization-img;
+}
+
+#organizations-text-section {
+    grid-area: organization-text;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background-color: #f2f2f2;
+}
+
+.footer-content {
+    max-width: 1440px;
+    height: 180px;
+    margin: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
