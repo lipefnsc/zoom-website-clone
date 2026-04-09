@@ -2,9 +2,12 @@
 
 /* ----- HEADER ----- */
 
+
 .header-content {
+    max-width: 1440px;
     height: 80px;
-    padding: 0 36px;
+    margin: auto;
+    padding: 0 18px;
 
     display: flex;
     justify-content: space-between;
@@ -66,3 +69,6 @@
 .button.right:hover {
     background-color: #0648ce;
 }
+
+/* ----- MAIN ----- */
+
