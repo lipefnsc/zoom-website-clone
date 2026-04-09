@@ -7,7 +7,7 @@
     max-width: 1440px;
     height: 80px;
     margin: auto;
-    padding: 0 18px;
+    padding: 18px;
 
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@
 .main-content {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 18px;
+    padding: 20px 18px;
 
     display: grid;
     grid-template-areas: 
@@ -125,7 +125,7 @@ footer {
 
 .footer-content {
     max-width: 1440px;
-    height: 180px;
+    height: 140px;
     margin: auto;
     text-align: center;
 
@@ -134,4 +134,52 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+/* ===== MEDIA ===== */
+
+@media (max-width: 1250px) {
+    .header-content {
+        padding: 16px;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .main-content {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+
+    .main-content {
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas: 
+            'transform'
+            'transform-img'
+            'organization-img'
+            'organization-text'
+        ;
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+    #transform-section {
+        text-align: center;
+    }
+
+    #transform-section .button {
+        align-self: center;
+    }
+
+    #organizations-text-section {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    #organizations-text-section .button {
+        align-self: center;
+    }
 }
